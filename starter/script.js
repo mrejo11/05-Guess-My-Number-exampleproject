@@ -79,3 +79,14 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 });
+document.querySelector('.again').addEventListener('click', function (){
+     Number(document.querySelector('.guess').value);
+    document.querySelector('.message').textContent='start guessing...'
+    document.querySelector('body').style.backgroundColor = '#222';
+    document.querySelector('.number').style.width=
+    '15rem'
+    document.querySelector('.score').textContent = 20;
+    document.querySelector('.number').textContent = '?'
+    document.querySelector('.guess').value=''
+
+})
